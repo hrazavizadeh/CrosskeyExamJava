@@ -1,0 +1,9 @@
+Run Path:
+	\bin\Debug\CrosskeyExam.exe
+
+Language:
+	Java
+
+IDE:
+	NetBeans IDE 8.2
+	
