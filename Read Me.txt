@@ -1,2 +1,9 @@
-Coming soon
+Run Path:
+	\bin\monthlyPayCalc.class
+
+Language:
+	Java
+
+IDE:
+	Eclipse 4.5.0
 	
