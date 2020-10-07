@@ -1,7 +1,6 @@
 import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-//import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -27,7 +26,7 @@ public class monthlyPayCalc {
 				break;
 			if(!new File(filePath).exists())
 			{
-				System.out.print("File not found!!!!!!\r\n\r\n");
+				System.out.print("File not found!!!!!!\r\n\r\n");				
 				continue;
 			}
 			//Open file from entered path
@@ -43,10 +42,12 @@ public class monthlyPayCalc {
 			reader.close();
 	    
 			showResult(customerList);
+			
 			System.out.println();
 			System.out.println("Save the result? (Y/N)");
 			if(userInput.nextLine().equalsIgnoreCase("Y"))
 				exportReport(customerList, filePath);
+			
 			System.out.println();
 			System.out.println("Exit? (Y/N)");
 		}while(!userInput.nextLine().equalsIgnoreCase("y"));
