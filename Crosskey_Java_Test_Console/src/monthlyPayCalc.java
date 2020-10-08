@@ -41,11 +41,13 @@ public class monthlyPayCalc {
 			}
 			reader.close();
 	    
+			//Display Result
 			showResult(customerList);
 			
 			System.out.println();
 			System.out.println("Save the result? (Y/N)");
 			if(userInput.nextLine().equalsIgnoreCase("Y"))
+				//Save Report in TXT file
 				exportReport(customerList, filePath);
 			
 			System.out.println();
