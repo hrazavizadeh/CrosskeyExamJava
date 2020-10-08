@@ -10,9 +10,9 @@ public class monthlyPayCalc {
 
 	{
 		BufferedReader reader =null;
+		Scanner userInput=new Scanner(System.in);
 		try
-		{
-		Scanner userInput=new Scanner(System.in);		
+		{				
 		String filePath="";
 		String record="";
 		ArrayList<customerLoan> customerList=new ArrayList<customerLoan>();
@@ -60,21 +60,17 @@ public class monthlyPayCalc {
 		finally {
 			if(reader!=null)
 				reader.close();
+			userInput.close();
 		}
 	}
 	
 	
 	
-	//Extract files from a record and return an customerLoan objec
+	//Extract files from a record and return an customerLoan object
 	private static customerLoan creatCustomer(String record)
 	{
 		try
-		{
-		String customerName="";
-		int years=0;
-		double totalLoan=0;
-		double interest=0;
-		
+		{		
 		
 		int startIndex = 0;
 		int fieldIndex = 0;
